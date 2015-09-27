@@ -4,12 +4,29 @@
 
 {% block content %}
 
-<h2>Example One</h2>
 <div class="row">
-  <div id="example1" class="col-sm-8">{_ Loading... _}</div>
+
+<h2>Example One</h2>
+
+  <div class="col-sm-8">
+
+  <p>
+  In the space below a simple "Hello World" component is loaded. This component
+  is dynamically inserted into the page.  
+  </p>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">Example</div>
+    <div class="panel-body">
+       <div id="example1">{_ Loading... _}</div>
+    </div>
+  </div>
+
+  </div>
 </div>
 
 {% javascript %}
+/* Load component named "empty" on an element with id "example1" */
 z_start_view("example1", "empty", {});
 {% endjavascript %}
 
@@ -29,4 +46,5 @@ z_start_view("example1", "empty", {});
   "js/modules/lazyload.js"
   "js/modules/z.component.js"
 %}
+
 {% endblock %}
