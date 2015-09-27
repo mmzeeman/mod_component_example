@@ -1,0 +1,6 @@
+%% -*- mode: erlang -*-
+%% Dispatch rules for mod_component_example.
+[
+ {component_example, ["examples", "mod_component"], controller_template,  [ 
+    {template, "mod_component_examples.tpl"}, {ssl, any} ]}
+].
