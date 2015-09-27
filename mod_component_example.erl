@@ -14,6 +14,12 @@
 ]).
 
 
+%% When z_start_view is called and the page doesn't have the requested
+%% component, mod_component tries to load it. It expects a function and
+%% a list of js, and css dependencies. The function is called when all
+%% dependencies are loaded on the page. In thit case it initializes the
+%% mithril component on the page.
+%% 
 observe_inject_component(#inject_component{name= <<"empty">>}, _Context) ->
     {ok, <<"function() {
             var c = z_components['empty'];
