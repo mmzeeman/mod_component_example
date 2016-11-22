@@ -2,5 +2,7 @@
 %% Dispatch rules for mod_component_example.
 [
  {component_example, ["examples", "mod_component"], controller_template,  [ 
-    {template, "mod_component_examples.tpl"}, {ssl, any} ]}
+    {template, "mod_component_examples.tpl"}, {ssl, any} ]},
+ {incremental_dom_example, ["examples", "incremental_dom"], controller_template,  [ 
+    {template, "incremental_dom_examples.tpl"}, {ssl, any} ]}
 ].

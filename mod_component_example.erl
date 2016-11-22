@@ -5,7 +5,7 @@
 -mod_description("A module with some examples on using mod_component.").
 -mod_prio(20).
 
--mod_depends([mqtt, component]).
+-mod_depends([mod_mqtt, mod_component]).
 
 -include("modules/mod_component/include/mod_component.hrl").
 

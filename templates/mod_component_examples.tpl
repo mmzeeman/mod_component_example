@@ -1,4 +1,4 @@
-{% extends "base.tpl" %}
+{% extends "example-base.tpl" %}
 
 {% block title %}Mod Component Examples {% endblock %}
 
